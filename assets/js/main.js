@@ -474,11 +474,12 @@
     });
         
     var carouselSlider = new Swiper('.single-flexible__container', {
-        slidesPerView : 1,
-        slidesPerGroup: 1,
+        slidesPerView : 4,
+        slidesPerGroup: 4,
+        autoplay: true,
         loop: true,
         speed: 1000,
-        spaceBetween : 30,
+        spaceBetween : 10,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -493,11 +494,11 @@
                 slidesPerView : 3
             },
             1200:{
-                slidesPerView : 2
+                slidesPerView : 3
             },
 
             991:{
-                slidesPerView : 1
+                slidesPerView : 2
             },
 
             767:{
@@ -1178,3 +1179,15 @@
     }
 
 })(jQuery);
+Fancybox.bind('[data-fancybox="gallery1"]', {
+    Thumbs: {
+        autoStart: true,
+    },
+    Toolbar: {
+        display: [
+            "close",
+            "zoom",
+            "fullscreen"
+        ]
+    }
+});
