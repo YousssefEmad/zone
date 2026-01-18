@@ -23,7 +23,7 @@ body.no-overflow {
   overflow: hidden;
 }
 #main-wrapper{
-  padding-bottom: 500px;
+  padding-bottom: 415px;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
@@ -922,6 +922,9 @@ input[type=checkbox] {
   -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   overflow: hidden;
+}
+.scroll-top img{
+    height: 40px;
 }
 @media only screen and (max-width: 479px) {
   .scroll-top {
@@ -2139,7 +2142,7 @@ input[type=checkbox] {
 =              05. Header Css            =
 =============================================*/
 .header-area .is-sticky{
-      background-color: #000000 !important;
+      background-color: #7f0d0d !important;
 }
 .header-area {
   position: relative;
@@ -4093,6 +4096,7 @@ input[type=checkbox] {
 
 .copyright-text {
   display: inline-block;
+  color: #fff;
 }
 @media only screen and (max-width: 767px) {
   .copyright-text {
@@ -5483,8 +5487,8 @@ ul.footer-widget__horizontal-list li {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: end;
 }
 .ht-box-icon.style-03 .icon-box-wrap .text{
   color: #ddd;
@@ -5494,13 +5498,21 @@ ul.footer-widget__horizontal-list li {
 }
 .ht-box-icon.style-03 .icon-box-wrap .content-header .icon {
   -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   font-size: 48px;
   font-weight: 48px;
   min-width: 60px;
   margin-right: 10px;
+  display: flex;
+  margin-bottom: 10px;
   color: #bbe8e7;
+}
+.ht-box-icon.style-03 .icon-box-wrap .content-header .icon img{
+  height: 60px;
+}
+.ht-box-icon.style-03:hover .icon-box-wrap .content-header .icon img{
+  filter: brightness(0);
 }
 .ht-box-icon.style-03 .icon-box-wrap .content-header .heading {
   color: #d62027;
@@ -8750,7 +8762,7 @@ ol {
   width: 48px;
   line-height: 40px;
   background: #ededed;
-  color: #696969;
+  color: #fff;
   border-radius: 50%;
   position: relative;
 }
@@ -10750,6 +10762,9 @@ ol {
           flex-shrink: 0;
   min-width: 54px;
 }
+.contact-info.sytle-one .contact-list-item .content .icon img{
+      width: 60px;
+}
 .contact-info.sytle-one .contact-list-item .content .main-content .heading, .contact-info.style-two .contact-list-item .content .main-content .heading {
   font-size: 15px;
   font-weight: 500;
@@ -12729,11 +12744,12 @@ blockquote {
   background-position: center;
 }
 .about-img{
-  width: 100%;
+  width: max-content;
   text-align: center;
+  border-radius: 25px;
 }
 .about-img img{
-  width: 100%;
+  /* width: 100%; */
   height: 550px;
 }
 .about-img iframe{
@@ -14428,6 +14444,9 @@ position: fixed;
     align-items: center;
     border-radius: 10px;
 }
+.emailicon img{
+  height: 30px;
+}
 .whatsappicon a i{
 	font-size: 24px;
     color: #fff!important;
@@ -14460,7 +14479,9 @@ position: fixed;
     justify-content: center;
     cursor: pointer;
 }
-
+.floating-icon .icon img{
+  height: 40px;
+}
 .floating-icon.phone .icon {
     background-color: rgb(37, 83, 211);
 }
